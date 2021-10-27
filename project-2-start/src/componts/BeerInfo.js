@@ -19,12 +19,10 @@ const BeerInfo = () => {
       setyeast(data[0].ingredients.yeast)
       setMalt(data[0].ingredients.malt)
       setHops(data[0].ingredients.hops)
-      // console.log(data[0])
     }
     getData()
   }, [id])
-
-  // console.log( { malt } )
+  
   return (
     <>
       <img src={beers.image_url}></img>
