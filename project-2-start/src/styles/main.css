@@ -1,0 +1,18 @@
+.image2 {
+  background-image:url('./giphy background .gif') ;
+  background-position: cover;
+  background-position: center;
+  background-size: 500px;
+  height: 500px;
+  width: 700px;
+  background-repeat: no-repeat;
+
+}
+
+.hero-body {
+  align-self: center;
+  background-color: black;
+}
+.hero.is-fullheight-with-navbar {
+  background-color: black;
+}
