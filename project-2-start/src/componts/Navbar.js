@@ -4,8 +4,8 @@ import logo from '/Users/piotr/development/Project 2 movies/project-2-start/src/
 
 const Navbar = () => {
   return (
-    <nav className='navbar is-black'>
-      <div className='navbar-brand'>
+    <nav className='navbar is-flex-direction-row is-black'>
+      <div className='navbar-brand '>
         <div className="navbar-item" href="">
           <figure className="image">
             <Link to='/'><img src={logo}/></Link>
@@ -15,7 +15,7 @@ const Navbar = () => {
           <a className="navbar-link">
             Year
           </a>
-          <div className="navbar-dropdown">
+          <div className="navbar-item navbar-dropdown">
             <a className="navbar-item">
               1920 - 1940
             </a>
