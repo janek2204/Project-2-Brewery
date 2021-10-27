@@ -8,7 +8,7 @@ const Home = () => {
         <div className="hero-body">
           <div className='container'>
             <div className='image2'></div>
-            <Link to='/beers'><button className='button is-link is-fullwidth'>Discover Brewdog!</button></Link>
+            <Link to='/beers'><button className='button is-link is-fullwidth is-rounded'>Discover Brewdog!</button></Link>
           </div>
         </div>
       </section>

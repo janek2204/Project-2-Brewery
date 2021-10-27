@@ -4,15 +4,18 @@ import logo from '/Users/piotr/development/Project 2 movies/project-2-start/src/
 
 const Navbar = () => {
   return (
-    <nav className='navbar is-flex-direction-row is-black'>
+    <nav className='navbar is-flex-direction-row is-justify-content-space-between is-black'>
 
       <div className="navbar-item" href="">
         <figure className="image">
           <Link to='/'><img src={logo} /></Link>
         </figure>
       </div>
-      <div className="navbar-item navbar-end has-dropdown is-hoverable">
-        <a className="navbar-link">
+      <div className='navbar-item'>
+        <Link className='text' to='/beers'>🍻 Brewdog API 🍻</Link>
+      </div>
+      <div className="navbar-item has-dropdown is-hoverable">
+        <a className="navbar-link text">
           Filter by ABV%
         </a>
         <div className="navbar-item navbar-dropdown">
@@ -28,10 +31,8 @@ const Navbar = () => {
           <a className="navbar-item">
             10% -&gt;
           </a>
-
         </div>
       </div>
-
     </nav >
   )
 }

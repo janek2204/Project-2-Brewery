@@ -21,7 +21,7 @@ const BeersDisply = () => {
         <div className='tile is-ancestor is-flex-wrap-wrap is-flex-direction-row'>
           {beers.map(beer => {
             return (
-              <div key={beer.id} className="tile is-3 is-parent ">
+              <div key={beer.id} className="tile is-3 is-parent">
                 <Link className="tile is-child" id='background' to={`/beers/${beer.id}`}>
                   <div className="card-image">
                     <figure className="image is-3by5">
@@ -35,8 +35,8 @@ const BeersDisply = () => {
                       <p className="subtitle is-6 text">{beer.tagline}</p>
                     </div>
                     <div className="content subtitle is-6 text">
-                      <br />
-                      <time>First brewed in: {beer.first_brewed}</time>
+                      <br /><br/>
+                      <p>First brewed:<br/> <br/>{beer.first_brewed}</p>
                     </div>
                   </div>
                 </Link>

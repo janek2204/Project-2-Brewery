@@ -37,6 +37,9 @@
   background-position: center;
   
 }
+p {
+  text-align: center;
+}
 #root {
   /* font-family: 'Bubblegum Sans', cursive; */
   /* font-family: 'Creepster', cursive; */
@@ -44,4 +47,11 @@
   /* font-family: 'Permanent Marker', cursive; */
   font-family: 'Press Start 2P', cursive;
   /* font-family: 'Rampart One', cursive; */
+}
+.column {
+  text-align: center;
+}
+
+.button {
+  font-family: 'Press Start 2P', cursive;
 }
