@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '/Users/piotr/development/Project 2 movies/project-2-start/src/styles/giphy background .gif'
+import { handleClick } from './BeersDisplay'
+
+
+
 
 const Navbar = () => {
+
   return (
     <nav className='navbar is-flex-direction-row is-justify-content-space-between is-black'>
 
@@ -14,25 +19,7 @@ const Navbar = () => {
       <div className='navbar-item'>
         <Link className='text' to='/beers'>🍻 Brewdog API 🍻</Link>
       </div>
-      <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-link text">
-          Filter by ABV%
-        </a>
-        <div className="navbar-item navbar-dropdown">
-          <a className="navbar-item">
-            4% - 6%
-          </a>
-          <a className="navbar-item">
-            6% - 8%
-          </a>
-          <a className="navbar-item">
-            8% - 10%
-          </a>
-          <a className="navbar-item">
-            10% -&gt;
-          </a>
-        </div>
-      </div>
+    
     </nav >
   )
 }
