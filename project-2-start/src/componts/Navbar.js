@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '/Users/piotr/development/Project 2 movies/project-2-start/src/styles/giphy background .gif'
-import { handleClick } from './BeersDisplay'
+
 
 
 
@@ -10,7 +10,6 @@ const Navbar = () => {
 
   return (
     <nav className='navbar is-flex-direction-row is-justify-content-space-between is-black'>
-
       <div className="navbar-item" href="">
         <figure className="image">
           <Link to='/'><img src={logo} /></Link>
@@ -19,7 +18,6 @@ const Navbar = () => {
       <div className='navbar-item'>
         <Link className='text' to='/beers'>🍻 Brewdog API 🍻</Link>
       </div>
-    
     </nav >
   )
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import Navbar from './Navbar'
 
 
 const BeerInfo = () => {
@@ -9,22 +10,31 @@ const BeerInfo = () => {
   const [yeast, setyeast] = useState()
   const [malt, setMalt] = useState([])
   const [hops, setHops] = useState([])
+  const [hasError, setHasError] = useState(false)
   const { id } = useParams()
-  
+
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(`https://api.punkapi.com/v2/beers/${id}`)
-      setBeers(data[0])
-      setFood(data[0].food_pairing)
-      setyeast(data[0].ingredients.yeast)
-      setMalt(data[0].ingredients.malt)
-      setHops(data[0].ingredients.hops)
+      try {
+        const { data } = await axios.get(`https://api.punkapi.com/v2/bees/${id}`)
+        setBeers(data[0])
+        setFood(data[0].food_pairing)
+        setyeast(data[0].ingredients.yeast)
+        setMalt(data[0].ingredients.malt)
+        setHops(data[0].ingredients.hops)
+      } catch (err) {
+        setHasError(true)
+      }
     }
     getData()
   }, [id])
 
   return (
     <>
+      <Navbar />
+      <h2 className="title has-text-centered">
+        {hasError ? 'Oh something went wrong, There are no beers to display 😞' : ' Beers are Loading...'}
+      </h2>
       <div className='section'>
         <div className='container'>
           <div className='title has-text-centered'> <h1>{beers.name}</h1></div>
@@ -55,7 +65,7 @@ const BeerInfo = () => {
                 })}
                 <hr />
               </div>
-              <br/>
+              <br />
               <div>
                 <h1 className='title is-5'>Malt:</h1>
                 {malt.map(item => {
@@ -69,7 +79,7 @@ const BeerInfo = () => {
                   return (
                     <a className='subtitle is-6' key={beers.id}>{item.name},</a>)
                 })}
-                <hr/>
+                <hr />
                 <h1 className='title is-5'>Yeast:</h1>
                 <h1 className='subtitle is-6'>{yeast}</h1>
               </div>

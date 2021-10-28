@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Navbar from './Navbar'
 const Home = () => {
   return (
-    <div className='imag'>
+    <><Navbar /><div className='imag'>
       <section className='hero is-fullheight-with-navbar'>
         <div className="hero-body">
           <div className='container'>
@@ -12,8 +12,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-    
+    </div></>
+
   )
 }
 
