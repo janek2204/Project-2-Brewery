@@ -15,6 +15,7 @@ const Navbar = () => {
           <Link to='/'><img src={logo} /></Link>
         </figure>
       </div>
+      <div className='nabar-item'></div>
       <div className='navbar-item'>
         <Link className='text' to='/beers'>🍻 Brewdog API 🍻</Link>
       </div>

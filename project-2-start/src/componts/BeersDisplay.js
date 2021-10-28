@@ -50,16 +50,16 @@ const BeersDisply = () => {
           Filter by ABV%
         </a>
         <div className="navbar-item navbar-dropdown" id='filter-item' >
-          <option className="navbar-item" value='4' onClick={handleClick}>
+          <option className="navbar-item button is-rounded" value='4' onClick={handleClick}>
             4% - 6%
           </option>
-          <option className="navbar-item" value='6' onClick={handleClick}>
+          <option className="navbar-item button is-rounded" value='6' onClick={handleClick}>
             6% - 8%
           </option>
-          <option className="navbar-item" value='8' onClick={handleClick}>
+          <option className="navbar-item button is-rounded" value='8' onClick={handleClick}>
             8% - 10%
           </option>
-          <option className="navbar-item" value='10' onClick={handleClick}>
+          <option className="navbar-item button is-rounded" value='10' onClick={handleClick}>
             10% -&gt;
           </option>
         </div>

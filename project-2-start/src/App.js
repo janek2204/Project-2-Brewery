@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import BeerInfo from './componts/BeerInfo'
 
 
+
 const App = () => {
   return (
     <BrowserRouter>
