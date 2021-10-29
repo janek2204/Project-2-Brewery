@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Navbar from './Navbar'
-import error from '/Users/piotr/development/Project 2 movies/project-2-start/src/styles/output-onlinegiftools.gif'
+import error from '../styles/output-onlinegiftools.gif'
 
 
 const BeerInfo = () => {

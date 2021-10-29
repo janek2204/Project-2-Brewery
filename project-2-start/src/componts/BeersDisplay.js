@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import logo from '/Users/piotr/development/Project 2 movies/project-2-start/src/styles/giphy background .gif'
+import logo from '../styles/giphy background .gif'
 
 
 
